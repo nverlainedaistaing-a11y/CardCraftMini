@@ -1,0 +1,35 @@
+:root {
+  --page: #F4F1EA;
+  --card: #FFFFFF;
+  --accent: #3D5A80;
+  --text: #293241;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background-color: var(--page);
+  color: var(--text);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+.business-card {
+  width: calc(100% - 2rem);
+  max-width: 25rem;
+  min-height: 12rem;
+  margin: 1rem;
+  padding: 2rem;
+  border: 1px solid rgba(61, 90, 128, 0.2);
+  border-radius: 1.25rem;
+  background-color: var(--card);
+  box-shadow: 0 0.5rem 1.5rem rgba(41, 50, 65, 0.08);
+  text-align: center;
+}
