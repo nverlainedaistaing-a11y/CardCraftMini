@@ -46,21 +46,57 @@ body {
 
 
 /* My Profile Photo */
-.profile-photo {
-  display: block;
+.photo-frame {
+  box-sizing: border-box;
   width: 8rem;
-  height: 8rem;
   max-width: 100%;
+  aspect-ratio: 1;
   margin: 0 auto 1.65rem;
-  padding: 0;
-
   border: 3px solid var(--page);
   border-radius: 50%;
+  overflow: hidden;
+}
 
- /*To act on the image */
+.profile-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: 85% 39%;
+  object-position: 85% 29%;
+  transform: translateX(-12px) scale(1.16);
+}
 
-    /* Move the circular picture 10px to the left */
-  transform: translateX(-10px);
+/* Name */
+h1 {
+  margin: 0.25rem 0 0.35rem;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  color: var(--text);
+}
+/* Card Text */
+
+.bio {
+  max-width: 300px;
+  margin: 16px auto 20px;
+  color: #34465e;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.services span {
+  padding: 10px 8px;
+  background: #f1f5fa;
+  color: #3d5a80;
+  border-radius: 9px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
 }
