@@ -34,15 +34,33 @@ body {
   text-align: center;
 }
 
+/* Profile Photo Container */
+.photo-container {
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto 1.45rem;
+  border: 3px solid var(--page);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
 /* My Profile Photo */
 .profile-photo {
   display: block;
   width: 8rem;
+  height: 8rem;
   max-width: 100%;
-  height: auto;
-  aspect-ratio: 1;
-  margin: 0 auto 1.25rem;
+  margin: 0 auto 1.65rem;
+  padding: 0;
+
   border: 3px solid var(--page);
   border-radius: 50%;
+
+ /*To act on the image */
   object-fit: cover;
+  object-position: 85% 39%;
+
+    /* Move the circular picture 10px to the left */
+  transform: translateX(-10px);
 }
